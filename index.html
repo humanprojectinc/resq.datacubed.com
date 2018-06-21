@@ -5,13 +5,18 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 	<style>
-		body, html {
-			font-family: 'Lato', sans-serif;
-			font-size:24px;
-		}
+	
+		@media only screen and (max-width: 1000px) {
+			.center {
+				transform: scale(1.5);
+				top: 300px !important;
+			}
+		}	
 		.center {
-			width: 500px;
+			max-width: 500px;
+			width: 100%;
 			height: 850px;
 
 			position: absolute;
@@ -22,6 +27,10 @@
 
 			margin-left: auto;
 			margin-right: auto;
+		}
+		body, html {
+			font-family: 'Lato', sans-serif;
+			font-size:24px;
 		}
 		#logo {
 			pointer-events: none;
@@ -60,9 +69,9 @@
 		
 		<p>
 			<span class="num">1</span>
-			Recovering users install a smartphone app. ResQ will support iOS, but for now you can get an APK to try it on Android.
+			Recovering users install a smartphone app. ResQ will support iOS, but for now you can try it on Android. <i class="fa fa-asterisk"></i>
 		</p>		
-		<a href="https://drive.google.com/uc?id=1TCAjrNiVJddfNjww3i542DLvJZE8Oe7k&export=download" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="fab fa-android"></i>&nbsp; Get APK</a>
+		<a href="https://www.dropbox.com/s/uzpfhxtci18k30e/ResQ%20App.apk?dl=1" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="fab fa-android"></i>&nbsp; Get APK</a>
 		<br><br>
 		
 		
@@ -71,7 +80,7 @@
 			<span class="num num2">2</span>
 			Supporters access ResQ on the web via the Dashboard.
 		</p>		
-		<a href="./dash" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="fab tachometer-alt"></i> Open Dashboard</a>
+		<a href="/dash" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="fab tachometer-alt"></i> Open Dashboard</a>
 		<br><br>
 		
 		We hope you enjoy the app experience,
@@ -80,6 +89,9 @@
 		
 		<img src="img/excitedopi.png" style="width:100px;float:right">
 		<img src="img/hugopi.png" style="width:100px;float:right">
+		
+		<br><br>
+		<span style="font-size:11pt;display:block;width:100%;clear:both;padding-top:20px"><i class="fa fa-asterisk"></i> <strong>Note:</strong> You may need to enable "unknown sources" (<a href="https://android.gadgethacks.com/how-to/android-basics-enable-unknown-sources-sideload-apps-0161947" target="_blank">learn more</a>).</span>
 	</div>
 </body>
 </html>
