@@ -1,1 +1,42 @@
-<!doctype html><html lang="en"> <head> <style>@import url("https://use.typekit.net/kut8nzu.css");</style> <meta charset="utf-8"> <title>ResQ</title> <script defer="" src="fontawesome-all.min.b5ef313a.js"></script> <link rel="shortcut icon" type="image/png" href="favicon.cb07d9ac.png"> <link rel="stylesheet" href="main.b6e8f78a.css"></head> <body> <div id="root"></div> <script src="main.b76820ff.js"></script> </body> </html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url("https://use.typekit.net/kut8nzu.css");
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=.35, minimum-scale=.35, user-scalable=no">
+    <title>ResQ</title>
+    <script defer="" src="fontawesome-all.min.b5ef313a.js"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.cb07d9ac.png">
+    <link rel="stylesheet" href="main.b6e8f78a.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="main.b76820ff.js"></script>
+    <script>
+    // self executing function here
+    (function() {
+
+      window.onresize = function (event) {
+        applyOrientation();
+      }
+
+      function applyOrientation() {
+        var elem = document.querySelector('meta[name=viewport]');
+        if (window.innerHeight > window.innerWidth) {
+          // Portrait mode
+          elem.setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=.35, minimum-scale=.35, user-scalable=no")
+        } else {
+          // Landscape mode
+          elem.setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=.6, minimum-scale=.6, user-scalable=no")
+        }
+      }
+
+    })();
+    </script>
+</body>
+
+</html>
